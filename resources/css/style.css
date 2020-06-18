@@ -17,6 +17,15 @@ html
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* -------------------------------*/
 /* REUSABLE COMPONENTS */
 /* -------------------------------*/
@@ -30,7 +39,7 @@ section {
   padding: 80px 0;
 }
 
-.box{
+.box {
   padding: 1%;
 }
 
@@ -82,7 +91,7 @@ h2:after {
   margin-left: 15%;
 }
 
-.box p{
+.box p {
   font-size: 90%;
   line-height: 145%;
 }
@@ -189,7 +198,7 @@ header {
   }
     
   .main-nav li a:hover,
-  .main-nav li a:active{
+  .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
   }
   
@@ -197,7 +206,7 @@ header {
 /* FEATURES */
 /* -------------------------------*/
 
-.section-features .long-copy{
+.section-features .long-copy {
   margin-bottom: 30px;
 }
 
@@ -207,7 +216,7 @@ header {
 /* MEALS */
 /* -------------------------------*/
 
-.section-meals{
+.section-meals {
   padding: 0;
 }
 
@@ -217,20 +226,20 @@ header {
   width: 100%;
 }
 
-.meals-showcase li{
+.meals-showcase li {
   display: block;
   float: left;
   width: 25%;
 }
 
-.meal-photo{
+.meal-photo {
   width: 100%;
   margin: 0;
   overflow: hidden;
   background-color: #000;
 }
 
-.meal-photo img{
+.meal-photo img {
   opacity: 0.7;
   width: 100%;
   height: auto;
@@ -238,8 +247,59 @@ header {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.meal-photo img:hover{
+.meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
   
+}
+
+/* -------------------------------*/
+/* HOW IT WORKS */
+/* -------------------------------*/
+
+.section-steps {
+  background-color: rgb(240, 240, 240);
+}
+
+.steps-box:first-child {
+  margin-top: 30px;
+  text-align: right;
+  padding-right: 3%;
+}
+
+.steps-box:last-child {
+  margin-top: 70px;
+  padding-left: 3%;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  /*display: inline-block;*/
+  float: left;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  font-size: 150%;
+  text-align: center;
+  margin-right: 25px;
+  padding: 5px;
+} 
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
 }
